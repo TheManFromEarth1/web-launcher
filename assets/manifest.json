@@ -1,5 +1,6 @@
 {
   "name": "Web Launcher: new tab dashboard",
+  "short_name": "Web Launcher",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

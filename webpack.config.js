@@ -105,9 +105,19 @@ module.exports = env => {
                   description: pkg.description,
                 },
               },
+              minify: true,
             }),
           ]
-        : []),
+        : [
+            new CopyPlugin({
+              patterns: [
+                {
+                  from: './assets/icons/16.png',
+                  to: './icons/16.png',
+                },
+              ],
+            }),
+          ]),
     ],
   };
 };
